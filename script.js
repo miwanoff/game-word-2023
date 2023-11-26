@@ -21,6 +21,7 @@ window.onload = function () {
   remainEl.innerHTML = remain;
 
   guess = prompt("guess the letter");
+  usedLetters.innerHTML += guess;
   for (let i = 0; i < word.length; i++) {
     if (guess === word[i]) {
       answer[i] = word[i];
